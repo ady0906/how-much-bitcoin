@@ -17,5 +17,10 @@
         "url": "https://github.com/ady0906/how-much-bitcoin/issues"
     },
     "homepage": "https://github.com/ady0906/how-much-bitcoin#readme",
-    "description": ""
+    "description": "",
+    "dependencies": {
+        "next": "^4.1.4",
+        "react": "^16.0.0",
+        "react-dom": "^16.0.0"
+    }
 }
