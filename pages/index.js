@@ -1,6 +1,11 @@
+import Link from 'next/link'
+
 const Index = () => (
     <div>
-        <p>Building a React component</p>
+        <Link href='/about'>
+            <a>About page</a>
+        </Link>
+        <p>Working with another component</p>
     </div>
 )
 
