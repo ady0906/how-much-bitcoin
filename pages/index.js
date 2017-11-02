@@ -1,12 +1,8 @@
-import Link from 'next/link'
+import Header from '../components/Header'
 
-const Index = () => (
+export default () => (
     <div>
-        <Link href='/about'>
-            <button style={{ fontSize: 20 }}>About page</button>
-        </Link>
-        <p>Working with another component</p>
+        <Header />
+        <p>Hello Next.js</p>
     </div>
 )
-
-export default Index
