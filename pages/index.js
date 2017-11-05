@@ -16,3 +16,17 @@ const Index = (props) => (
         </ul>
     </Layout>
 )
+
+// set initial values based on API data
+Index.getInitialProps = async function() {
+    const res = await fetch('https//api.tvmaze.com/search/shows?q=batman')
+    const data = await res.json()
+
+    console.log(`Show data fetched. Count: ${data.length}`)
+
+    return {
+        shows: data
+    }
+}
+
+export default Index
