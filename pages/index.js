@@ -1,21 +1,18 @@
 import Layout from '../components/MyLayout.js'
 import Link from 'next/link'
+import fetch from 'isomorphic-unfetch'
 
-const PostLink = (props) => (
-    <li>
-        <Link as={`/p/${props.id}`} href={`/post?title=${props.title}`}>
-            <a>{props.title}</a>
-        </Link>
-    </li>
-)
-
-export default () => (
+const Index = (props) => (
     <Layout>
-        <h1>Adrien's blog</h1>
+        <h1>How much in Bitcoin</h1>
         <ul>
-            <PostLink title='Hello Next.js'/>
-            <PostLink title='Learning Next.js + React is the bomb'/>
-            <PostLink title='Deploy apps with Zeit'/>
+            {props.shows.map(({show}) => (
+                <li key={show.id}>
+                    <Link as={`/p/${show.id}`} href={`/post?id=${show.id}`}>
+                        <a>{show.name}</a>
+                    </Link>
+                </li>
+            ))}
         </ul>
     </Layout>
 )
