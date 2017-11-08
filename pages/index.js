@@ -1,6 +1,13 @@
 import Layout from '../components/MyLayout.js'
 import Link from 'next/link'
-import fetch from 'isomorphic-unfetch'
+
+function getPosts() {
+    return [
+        { id: 'hello-nextjs', title: 'Hello Next.js' },
+        { id: 'learn-nextjs', title: 'Learn Next.js is dope' },
+        { id: 'deploy-nextjs', title: 'Deploy apps with ZEIT' }
+    ]
+}
 
 const Index = (props) => (
     <Layout>
