@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 const footerStyle = {
-    verticalAlign: 'center'
+    'textAlign': 'center'
 }
 
 const Footer = () => (
