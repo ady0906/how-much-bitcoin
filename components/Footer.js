@@ -9,6 +9,9 @@ const Footer = () => (
         <Link href='https://www.coindesk.com/price/'>
             <a>⚡ by CoinDesk</a>
         </Link>
+        <Link>
+            <a>Built with ♥ by Adrien Peynichou</a>
+        </Link>
     </div>
 )
 
