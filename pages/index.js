@@ -1,5 +1,6 @@
 import Layout from '../components/MyLayout.js'
 import Link from 'next/link'
+import fetch from 'isomorphic-unfetch'
 
 function getPosts() {
     return [
